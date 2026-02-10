@@ -10,11 +10,13 @@ const phones = [
 ];
 
 function findAveragePhonePrice(phones) {
-  sum = 0;
-  for (const i of phone.price) {
-    let sum = sum + i;
+  let sum = 0;
+
+  for (const i of phones) {
+    sum += i.price;
     return sum;
   }
 }
 
-console.log(findAveragePhonePrice(phones.price));
+const total = findAveragePhonePrice(phones);
+console.log(total);
